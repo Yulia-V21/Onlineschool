@@ -1,10 +1,12 @@
-import logo from "../../shared/Images/logoHeader.png";
-import license from "../../shared/Images/ic_license.png";
-import vk from "../../shared/Images/ic_vk.png";
-import tg from "../../shared/Images/ic_tg.png";
-import youtube from "../../shared/Images/ic_youtube.png";
-import place from "../../shared/Images/ic_place.png";
-import phone from "../../shared/Images/ic_tel.png";
+import {
+  logo,
+  license,
+  vk,
+  tg,
+  youtube,
+  place,
+  phone,
+} from "../../shared/Images";
 import "./Footer.css";
 const Footer = () => {
   return (

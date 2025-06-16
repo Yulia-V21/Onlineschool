@@ -1,0 +1,11 @@
+export { default as logo } from './logoHeader.png';
+export { default as license } from './ic_license.png';
+export { default as vk } from './ic_vk.png';
+export { default as tg } from './ic_vk.png';
+export { default as youtube } from './ic_youtube.png';
+export { default as place } from './ic_place.png';
+export { default as phone } from './ic_tel.png';
+export { default as tg_40 } from './ic_tg_40.png';
+export { default as watsapp } from './ic_watsapp.png';
+export { default as background } from './background.png';
+export { default as group } from './Group.png';

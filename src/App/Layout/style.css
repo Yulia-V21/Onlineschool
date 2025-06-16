@@ -1,0 +1,13 @@
+.layout__content {
+  height: 1000px;
+}
+
+.layout__background {
+  position: absolute;
+  width: 100%;
+  height: 770px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

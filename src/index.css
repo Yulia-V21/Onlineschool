@@ -11,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Gotham_Pro_medium";
 }
 
 code {
@@ -19,4 +20,12 @@ code {
 }
 ul {
   list-style: none;
+}
+@font-face {
+  font-family: "Gotham_Pro_bold";
+  src: url("./shared/Fonts/gothampro_bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Gotham_Pro_medium";
+  src: url("./shared/Fonts/gothampro_medium.ttf") format("truetype");
 }

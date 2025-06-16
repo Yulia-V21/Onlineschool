@@ -1,10 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
-import Layout from './Layout';
-import HomePage from '../pages/home/HomePage';
-import Grades1to4Page from '../pages/grades1to4/Grades1to4Page';
-import Grades5to8Page from '../pages/grades5to8/Grades5to8Page';
-import Grades9to11Page from '../pages/grades9to11/Grades9to11Page';
-
+import { Routes, Route } from "react-router-dom";
+import Layout from "./Layout/Layout";
+import HomePage from "../pages/home/HomePage";
+import Grades1to4Page from "../pages/grades1to4/Grades1to4Page";
+import Grades5to8Page from "../pages/grades5to8/Grades5to8Page";
+import Grades9to11Page from "../pages/grades9to11/Grades9to11Page";
 
 const AppRoutes = () => {
   return (

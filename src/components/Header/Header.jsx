@@ -1,7 +1,7 @@
 import "./Header.css";
-import "../Button.css";
 import logo from "../../shared/Images/logoHeader.png";
 import vector from "../../shared/Images/Vector.png";
+import CustomButton from "../CustomButton/CustomButton";
 
 const Header = () => {
   return (
@@ -10,7 +10,12 @@ const Header = () => {
         <img src={logo} alt="Logo" />
         <div className="header_info">
           <span>8(800)300-37-91</span>
-          <button className="btn">Записаться на урок</button>
+          <CustomButton
+          text="Записаться на урок"
+          width="222px"
+          height="57px"
+          onClick={() => console.log('sdfgh')}
+          />
         </div>
       </div>
       <nav>
