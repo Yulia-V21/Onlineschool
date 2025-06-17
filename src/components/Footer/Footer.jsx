@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__info">
         <div className="footer__info_logo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="logo" style= {{width:"100%"}}/>
           <p>
             Соглашение о конфиденциальности ООО «Школа Будущего Онлайн»
             Российская Федерация, 141804, Московская обл., г. Дмитров, ул

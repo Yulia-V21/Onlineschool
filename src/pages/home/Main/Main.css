@@ -1,0 +1,32 @@
+.main__content {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 30px;
+}
+.main__content_info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__content_btn {
+  display: flex;
+  gap: 10px;
+}
+.main__content_base {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.main__content_title {
+  font-size: 55px;
+  color: #243976;
+}
+.main__content_title span {
+  color: #49b3f7;
+}
+.main__content_text {
+  font-size: 17px;
+  font-weight: normal;
+}
+

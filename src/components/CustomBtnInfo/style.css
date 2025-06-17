@@ -1,0 +1,11 @@
+.custom_btn_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.custom_text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #737373;
+}
