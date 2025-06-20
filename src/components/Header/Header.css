@@ -1,7 +1,8 @@
-.header {
+
+.head_container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding: 10px 30px;
 }
 .header_top {
@@ -16,6 +17,7 @@
   gap: 29px;
 }
 .header_info span {
+  font-family: 'Gotham_Pro_medium';
   font-size: 20px;
   font-weight: bold;
   color: #243976;
@@ -32,8 +34,10 @@
   justify-content: center;
   gap: 30px;
 }
+
 .header__list li,
 .header_acc span {
+  font-family: 'Gotham_Pro_medium';
   cursor: pointer;
   font-size: 14px;
   font-weight: bold;

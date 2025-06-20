@@ -1,0 +1,36 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px;
+}
+.benefits__title {
+  text-align: center;
+}
+.benefits_points {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.benefits_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 33%;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+}
+.benefits_item img {
+  width: 160px;
+  height: 160px;
+}
+.benefits_item h4 {
+    text-align: center;
+}
+.benefits_item p {
+  text-align: center;
+  font-size: 15px;
+  width: 82%;
+}

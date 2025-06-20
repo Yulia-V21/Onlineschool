@@ -2,19 +2,15 @@ import { Outlet } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import HomePage from "../../pages/home/HomePage";
-import { background } from "../../shared/Images";
+
 import "./style.css";
 const Layout = () => {
   return (
     <div className="layout">
-      <div
-        className="layout__background"
-        style={{ backgroundImage: `url(${background})` }}
-      ></div>
       <div className="layout__content">
         <Header />
         <main className="layout__main">
-          <Outlet />
+        <Outlet />
         </main>
         <Footer />
       </div>

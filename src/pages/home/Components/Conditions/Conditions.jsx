@@ -1,4 +1,5 @@
-import CustomBtnInfo from "../../../components/CustomBtnInfo/CustomBtnInfo";
+import CustomBtnInfo from "../../../../components/CustomBtnInfo/CustomBtnInfo.jsx";
+import CustomPromo from "../../../../components/CustomPromo/CustomPromo.jsx";
 import ConditionItem from "./ConditionsItem.jsx";
 import {
   ico_cond_1,
@@ -6,17 +7,17 @@ import {
   ico_cond_3,
   ico_cond_4,
   ico_cond_5,
-  cond_girl,
+  promo_girl,
   cond_aspect_1,
   cond_aspect_2,
   cond_aspect_3,
   cond_aspect_4,
-} from "../../../shared/Images/index.js";
+} from "../../../../shared/Images/index.js";
 import "./style.css";
 
 const Conditions = () => {
   return (
-    <section className="conditions__content">
+    <section className="conditions__content container"> 
       <div className="conditions__content_one">
         <h2 className="conditions__content_title">
           Кому подходит онлайн образование?
@@ -40,19 +41,7 @@ const Conditions = () => {
             text="Для проживающих за рубежом"
           />
         </div>
-        <div className="promo_position">
-          <img className="promo_img" src={cond_girl} alt="#" />
-          <div className="promo">
-            <div className="promo_text">
-              <h3>Первый месяц обучения от 5250 руб</h3>
-              <span>
-                Не знаете подойдет ли вашему ребенку обучение онлайн? Попробуйте
-                первый месяц со скидкой 50%!
-              </span>
-            </div>
-            <CustomBtnInfo />
-          </div>
-        </div>
+        <CustomPromo img={promo_girl}/>
       </div>
       <div className="conditions__content_two">
         <h2 className="conditions__content_title">

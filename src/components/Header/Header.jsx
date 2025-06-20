@@ -5,7 +5,8 @@ import CustomButton from "../CustomButton/CustomButton";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header>
+      <div className="container head_container">
       <div className="header_top">
         <img src={logo} alt="Logo" />
         <div className="header_info">
@@ -33,6 +34,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
+      </div>
     </header>
   );
 };

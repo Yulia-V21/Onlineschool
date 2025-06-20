@@ -11,13 +11,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Gotham_Pro_medium";
+  font-family: "Gotham_Pro_light";
   color: #243976;
 }
-#root {
-    width: 85%;
-    max-width: 1280px;
-    margin: 0 auto;;
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 code {
@@ -27,6 +28,15 @@ code {
 ul {
   list-style: none;
 }
+
+h3 {
+  font-family: "Gotham_Pro_light";
+  font-size: 35px;
+}
+@font-face {
+  font-family: "Gotham_Pro_light";
+  src: url("./shared/Fonts/gothampro_light.ttf") format("truetype");
+}
 @font-face {
   font-family: "Gotham_Pro_bold";
   src: url("./shared/Fonts/gothampro_bold.ttf") format("truetype");
@@ -35,3 +45,7 @@ ul {
   font-family: "Gotham_Pro_medium";
   src: url("./shared/Fonts/gothampro_medium.ttf") format("truetype");
 }
+
+/* "Gotham_Pro_light"
+Gotham_Pro_bold
+Gotham_Pro_medium */

@@ -1,0 +1,45 @@
+.comparison {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  padding-top: 40px;
+}
+.comparison h3 {
+  text-align: center;
+}
+.comparison__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.comparison__content_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  padding: 15px;
+}
+.comparison__content_school {
+  background: linear-gradient(to right, #eff2fd, #fcfcfc);
+}
+.comparison__content_online {
+  background: linear-gradient(to right, #4271df, #789cf1);
+  color:#fff;
+}
+.comparison__content_text h3 {
+  font-size: 20px;
+  line-height: 103%;
+}
+.comparison__content_list {
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 15px;
+}
+
