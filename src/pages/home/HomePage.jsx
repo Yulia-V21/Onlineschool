@@ -5,26 +5,38 @@ import Comparison from "./Components/Comparison/Comparison";
 import Benefits from "./Components/Benefits/Benefits";
 import Price from "./Components/Price/Price";
 import Sertificate from "./Components/Sertificate/Sertificate";
-import Accordion from "../../components/Accordion/Accordion";
-import { accordionData } from "./../../shared/data/accordionData";
-import { reviews } from "../../shared/data/Reviews";
-import SlideBar from "../../components/SlideBar/SlideBar";
+import AccordionBlock from "./Components/AccordionBlock/Accordion";
+import { accList } from "./Components/AccordionBlock/AccordionData";
+import { useScroll } from "./../../Context/ScrollContext";
+import Reviews from "./Components/Reviews/Reviews";
+import Application from "./Components/Application/Application";
 
 const HomePage = () => {
+  const { sectionRefs } = useScroll();
   return (
     <>
       <Main />
-      <Conditions />
+      <div ref={(ref) => (sectionRefs.current.conditions = { current: ref })}>
+        <Conditions />
+      </div>
+      {/* <Conditions /> */}
       <Advantage />
-      <Comparison />
-      <Benefits />
-      <Price />
+      <div ref={(ref) => (sectionRefs.current.comparison = { current: ref })}>
+        <Comparison />
+      </div>
+      {/* <Comparison /> */}
+      <div ref={(ref) => (sectionRefs.current.benefits = { current: ref })}>
+        <Benefits />
+      </div>
+      {/* <Benefits /> */}
+      <div ref={(ref) => (sectionRefs.current.price = { current: ref })}>
+        <Price />
+      </div>
       <Sertificate />
-      <Accordion
-        title={accordionData[0].title}
-        description={accordionData[0].description}
-      />
-      <SlideBar reviews={reviews} />
+      <Reviews />
+      {/* <AccordionBlock /> */}
+      <AccordionBlock accList={accList} />
+      <Application />
     </>
   );
 };

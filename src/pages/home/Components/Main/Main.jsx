@@ -1,8 +1,10 @@
 import CustomButton from "../../../../components/CustomButton/CustomButton.jsx";
 import { group } from "../../../../shared/Images/index.js";
 import CustomBtnInfo from "../../../../components/CustomBtnInfo/CustomBtnInfo.jsx";
+import { useNavigate } from 'react-router-dom';
 import "./Main.css";
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <main>
       <div className="main__content">
@@ -13,19 +15,19 @@ const Main = () => {
                 text="1-4 классы"
                 width="125px"
                 height="30px"
-                onClick={() => console.log("sdfgh")}
+                onClick={() => navigate('/grades1-4')}
               />
               <CustomButton
                 text="5-8 классы"
                 width="125px"
                 height="30px"
-                onClick={() => console.log("sdfgh")}
+                onClick={() => navigate('/grades5-8')}
               />
               <CustomButton
                 text="9-11 классы"
                 width="125px"
                 height="30px"
-                onClick={() => console.log("sdfgh")}
+                onClick={() => navigate('/grades9-11')}
               />
             </div>
 
