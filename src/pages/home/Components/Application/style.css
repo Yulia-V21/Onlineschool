@@ -9,9 +9,10 @@
 }
 .bg_form {
   position: absolute;
-  top: -18px;
-  left: -36px;
-  width: 90%;
+  top: -29px;
+  left: -42px;
+  width: 93%;
+  z-index: -1;
 }
 .application_item_content {
   max-width: 50%;
@@ -24,7 +25,7 @@
   font-family: Gotham_Pro_bold;
 }
 .application__title span {
-  background-image: linear-gradient(to right, #4271DF, #789CF1);
+  background-image: linear-gradient(to right, #4271df, #789cf1);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
