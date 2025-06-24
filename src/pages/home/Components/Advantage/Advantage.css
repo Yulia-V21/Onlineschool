@@ -22,6 +22,12 @@ margin-bottom: 20px;
     align-items: center;
     gap: 20px;
 }
+.active {
+    background-color: #fff;
+}
+.active h4 {
+    color:aqua;
+}
 .advantage_content_left_text {
     display: flex;
     flex-direction: column;

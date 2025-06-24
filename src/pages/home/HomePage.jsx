@@ -1,6 +1,6 @@
 import Advantage from "./Components/Advantage/Advantage";
 import Conditions from "./Components/Conditions/Conditions";
-import Main from "./Components/Main/Main";
+import PromoHome from "./Components/PromoHome/PromoHome";
 import Comparison from "./Components/Comparison/Comparison";
 import Benefits from "./Components/Benefits/Benefits";
 import Price from "./Components/Price/Price";
@@ -15,7 +15,7 @@ const HomePage = () => {
   const { sectionRefs } = useScroll();
   return (
     <>
-      <Main />
+      <PromoHome />
       <div ref={(ref) => (sectionRefs.current.conditions = { current: ref })}>
         <Conditions />
       </div>

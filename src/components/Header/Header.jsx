@@ -4,8 +4,11 @@ import vector from "../../shared/Images/Vector.png";
 import CustomButton from "../CustomButton/CustomButton";
 import { useModal } from "../../Context/ModalContext";
 import { useScroll } from "../../Context/ScrollContext";
+import  {useNavigate } from 'react-router-dom'
+
 
 const Header = () => {
+  const navigate = useNavigate();
   const { scrollToSection } = useScroll();
   const menuItems = {
     "Для кого": "conditions",
@@ -15,11 +18,14 @@ const Header = () => {
     "Контакты": "contacts",
   };
   const { openModal } = useModal();
+  const handleLogoClick = () => {
+    navigate('/')
+  }
   return (
     <header>
       <div className="container head_container">
         <div className="header_top">
-          <img src={logo} alt="Logo" />
+          <img className="logo" src={logo} alt="Logo" onClick={handleLogoClick} />
           <div className="header_info">
             <span>8(800)300-37-91</span>
             <CustomButton

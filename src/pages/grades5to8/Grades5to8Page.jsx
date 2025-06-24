@@ -1,7 +1,9 @@
+import Promo5to8 from "./Promo5to8/Promo5to8";
+
 const Grades5to8Page = () => {
     return(
         <div>
-            <h1>Grades5to8Page</h1>
+            <Promo5to8 />
         </div>
     )
 }

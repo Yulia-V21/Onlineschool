@@ -9,3 +9,9 @@
   gap: 15px;
   color: #737373;
 }
+.custom_info_img {
+  cursor: pointer;
+}
+.custom_info_img:hover {
+  transform: scale(1.1);
+}

@@ -1,21 +1,18 @@
 .form {
-
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+  max-width: 420px;
+  background-color: #fff;
+  padding: 40px;
 }
+
 .form_content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 15px;
   background-color: #fff;
   padding: 35px 20px;
-  border-radius: 10px;
-  position: relative;
-  width: 400px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  box-shadow: 0 4px 23px #b0b0b0; 
 }
 
 .form_title {
@@ -40,28 +37,36 @@
   gap: 15px;
 }
 
-.form_input{
+.form_input_container {
   position: relative;
+  width: 100%;
+  max-width: 260px;
 }
+
 .form_input_img {
-  top: 12px;
-  left: 8px;
   position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: auto;
 }
 
 .form_input {
-  width: 260px;
+  width: 100%;
   padding: 16px 50px;
-  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 .form_consent {
   text-align: center;
   margin-top: 10px;
-  font-size: 15px;
+  font-size: 11px;
   color: #666;
+  width: 60%;
 }
 
 .form_consent a {

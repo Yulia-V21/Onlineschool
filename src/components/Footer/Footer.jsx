@@ -8,7 +8,18 @@ import {
   phone,
 } from "../../shared/Images";
 import "./Footer.css";
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
+const navigate = useNavigate()
+const HandleNav1 = () => {
+  navigate('/grades1-4')
+}
+const HandleNav2 = () => {
+  navigate('/grades5-8')
+}
+const HandleNav3 = () => {
+  navigate('/grades9-11')
+}
   return (
     <footer className="footer">
       <div className="footer__info">
@@ -23,9 +34,9 @@ const Footer = () => {
         <div className="footer__info_class">
           <h4 className="footer__info_title">Классы</h4>
           <ul className="footer__info_list">
-            <li>1-4 класс</li>
-            <li>5-8 класс</li>
-            <li>9-11 класс</li>
+            <li onClick={HandleNav1}>1-4 класс</li>
+            <li onClick={HandleNav2}>5-8 класс</li>
+            <li onClick={HandleNav3}>9-11 класс</li>
           </ul>
         </div>
         <div className="footer__info_doc">
@@ -54,7 +65,7 @@ const Footer = () => {
             <img src={place} alt="place" />
             <span>г.Дмитров ул.Московская, дом 23</span>
           </div>
-          <div className="footer__info_">
+          <div className="footer__info_phone">
             <img src={phone} alt="phone" />
             <span>8(800) 300-37-91</span>
           </div>

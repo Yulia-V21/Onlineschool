@@ -10,25 +10,33 @@ const Form = () => {
   return (
     <div className="form">
       <div className="form_content">
-        <h2 className="form_title">Отправить заявку</h2>
-        <p className="form_subtitle">
-          Наш менеджер свяжется с Вами <br /> для предоставления консультации
-        </p>
         <div className="form_items">
-          <div className="form_input">
-            <img className="form_input_img" src={placeholder_1} alt="#" />
+          <div className="form_input_container">
+            <img
+              className="form_input_img"
+              src={placeholder_1}
+              alt="Class icon"
+            />
             <input type="text" placeholder="Класс" className="form_input" />
           </div>
-          <div className="form_input">
-            <img className="form_input_img" src={placeholder_2} alt="#" />
+          <div className="form_input_container">
+            <img
+              className="form_input_img"
+              src={placeholder_2}
+              alt="Parent name icon"
+            />
             <input
               type="text"
               placeholder="Имя родителя"
               className="form_input"
             />
           </div>
-          <div className="form_input">
-            <img className="form_input_img" src={placeholder_3} alt="#" />
+          <div className="form_input_container">
+            <img
+              className="form_input_img"
+              src={placeholder_3}
+              alt="Phone icon"
+            />
             <input
               type="tel"
               placeholder="Телефон родителя"
@@ -36,7 +44,7 @@ const Form = () => {
             />
           </div>
           <CustomButton
-            text="Записаться на урок"
+            text="Оставить заявку"
             width="180px"
             height="48px"
             onClick={() => console.log("ok")}

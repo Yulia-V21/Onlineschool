@@ -1,4 +1,38 @@
 .application__content {
-display: flex;
-
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.application_item_form {
+  position: relative;
+}
+.bg_form {
+  position: absolute;
+  top: -18px;
+  left: -36px;
+  width: 90%;
+}
+.application_item_content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.application__title {
+  font-family: Gotham_Pro_bold;
+}
+.application__title span {
+  background-image: linear-gradient(to right, #4271DF, #789CF1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.application__text {
+  width: 70%;
+}
+.application__img {
+  width: 80%;
 }

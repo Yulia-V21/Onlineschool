@@ -1,7 +1,12 @@
 import CustomBtn from "../../../../components/CustomButton/CustomButton";
 import { price_ico } from "../../../../shared/Images/index";
+import { useNavigate } from "react-router-dom";
 
-const PriceItem = ({ title, subtitle, price, points, src }) => {
+const PriceItem = ({ title, subtitle, price, points, src, link }) => {
+  const navigate = useNavigate();
+  const handleNav = () => {
+    navigate(link)
+  }
   return (
     <div className="price_item">
       <div className="price_wrap">
@@ -27,7 +32,7 @@ const PriceItem = ({ title, subtitle, price, points, src }) => {
           text="Подробнее"
           width="160px"
           height="32px"
-          onClick={() => console.log("sdfgh")}
+          onClick={handleNav}
         />
         <img className="price__img" src={src} alt="#" />
       </div>
@@ -36,38 +41,3 @@ const PriceItem = ({ title, subtitle, price, points, src }) => {
 };
 export default PriceItem;
 
-//  import CustomBtn from "../../../../components/CustomButton/CustomButton";
-// import { price_ico } from '../../../../shared/Images/index'
-
-// const PriceItem = ({price, text, src}) => {
-//   return (
-//     <div className="price_item">
-//       <div className="price_wrap">
-//         {price}
-//         <span> /мес</span>
-//       </div>
-//       <div className="price__item_info">
-//         <div className="price__item_title">
-//           <h4>1-4 класс</h4>
-//           <span>Весёлые и увлекательные уроки</span>
-//         </div>
-//         <div className="price__item_points">
-//           <ul>
-//             <li>
-//               <img src={price_ico} alt="" />
-//               {text}
-//             </li>
-//           </ul>
-//         </div>
-//         <CustomBtn
-//           text="Подробнее"
-//           width="160px"
-//           height="32px"
-//           onClick={() => console.log("sdfgh")}
-//         />
-//         <img src={src} alt="#" />
-//       </div>
-//     </div>
-//   );
-// };
-//  export default PriceItem;

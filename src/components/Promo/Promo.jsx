@@ -1,9 +1,8 @@
-import CustomButton from "../../../../components/CustomButton/CustomButton.jsx";
-import { group } from "../../../../shared/Images/index.js";
-import CustomBtnInfo from "../../../../components/CustomBtnInfo/CustomBtnInfo.jsx";
+import CustomButton from '../CustomButton/CustomButton'
+import CustomBtnInfo from '../CustomBtnInfo/CustomBtnInfo'
 import { useNavigate } from 'react-router-dom';
-import "./Main.css";
-const Main = () => {
+import "./style.css";
+const Promo = ({title, subtitle, text, img }) => {
   const navigate = useNavigate();
   return (
     <main>
@@ -33,23 +32,21 @@ const Main = () => {
 
             <div className="main__content_base">
               <h2 className="main__content_title">
-                Настоящая школа <span>у вас дома!</span>
+                {title} <span>{subtitle}</span>
               </h2>
               <p className="main__content_text">
-                Мы даем детям реальные знания, потому наши классы не превышают
-                10 человек. А интерактивность и вовлеченность делает уроки
-                интересными для детей.
+                {text}
               </p>
               <h4>Семейное образование с нами - это эффективно!</h4>
               <CustomBtnInfo />
             </div>
           </div>
           <div>
-            <img src={group} alt="group" />
+            <img src={img} alt="group" />
           </div>
         </div>
       </div>
     </main>
   );
 };
-export default Main;
+export default Promo;

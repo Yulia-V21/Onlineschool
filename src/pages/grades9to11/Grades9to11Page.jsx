@@ -1,7 +1,8 @@
+import Promo9to11 from "./Promo9to11/Promo9to11";
 const Grades9to11Page = () => {
     return(
         <div>
-            <h1>Grades9to11Page</h1>
+            <Promo9to11 />
         </div>
     )
 }
