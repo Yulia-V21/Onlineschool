@@ -11,8 +11,8 @@ import "./Footer.css";
 import { useNavigate } from "react-router-dom";
 const Footer = () => {
 const navigate = useNavigate()
-const HandleNav1 = () => {
-  navigate('/grades1-4')
+const HandleNav1 = (url) => {
+  navigate(url)
 }
 const HandleNav2 = () => {
   navigate('/grades5-8')
@@ -34,7 +34,7 @@ const HandleNav3 = () => {
         <div className="footer__info_class">
           <h4 className="footer__info_title">Классы</h4>
           <ul className="footer__info_list">
-            <li onClick={HandleNav1}>1-4 класс</li>
+            <li onClick={ () => HandleNav1('/grades1-4')}>1-4 класс</li>
             <li onClick={HandleNav2}>5-8 класс</li>
             <li onClick={HandleNav3}>9-11 класс</li>
           </ul>

@@ -61,5 +61,9 @@ export { default as ico_lit } from "./ico_less_lit.png";
 export { default as ico_litch } from "./ico_less_litch.png";
 export { default as ico_muz } from "./ico_lees_muz.png";
 export { default as ico_ris } from "./ico_less_ris.png";
+export { default as bonus1 } from "./bonus_img1.png";
+export { default as bonus2 } from "./bonus_img2.png";
+export { default as bonus3 } from "./bonus_img3.png";
+export { default as bonus4 } from "./bonus_img4.png";
 
 
