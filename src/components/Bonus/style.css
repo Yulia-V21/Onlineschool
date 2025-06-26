@@ -23,6 +23,10 @@
   font-size: 31px;
   margin-bottom: 15px;
 }
+.bonus__item_text p {
+  font-size: 15px;
+  line-height: 18px;
+}
 .bonus__items {
   display: flex;
   flex-direction: column;
@@ -30,4 +34,8 @@
 }
 .bonus__item_img {
   width: 70%;
+}
+.bonus_right .bonus__item {
+  max-width: 400px;
+  height: 466px;
 }

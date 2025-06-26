@@ -10,7 +10,7 @@
   flex-direction: column;
   gap: 20px;
   flex-wrap: wrap;
-  padding: 40px 0;
+  padding: 40px 0 20px;
 }
 .prog__class h3 {
   font-family: "Gotham_Pro_medium";
@@ -29,7 +29,7 @@
 }
 .prog_content_top {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
   padding-bottom: 40px;
 }

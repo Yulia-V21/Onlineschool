@@ -1,4 +1,4 @@
-const BonusItem = ({title, text, img, className}) => {
+const BonusItem = ({title, text, img }) => {
 return (
 <div className="bonus__item">
     <div className="bonus__item_text">
