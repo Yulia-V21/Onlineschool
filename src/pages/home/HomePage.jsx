@@ -5,7 +5,7 @@ import Comparison from "./Components/Comparison/Comparison";
 import Benefits from "./Components/Benefits/Benefits";
 import Price from "./Components/Price/Price";
 import Sertificate from "./Components/Sertificate/Sertificate";
-import AccordionBlock from "./Components/AccordionBlock/Accordion";
+import AccordionBlock from "../../components/Accordion/Accordion"
 import { accList } from "./Components/AccordionBlock/AccordionData";
 import { useScroll } from "./../../Context/ScrollContext";
 import Reviews from "./Components/Reviews/Reviews";

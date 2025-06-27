@@ -1,3 +1,13 @@
+.accordion__block {
+  padding: 50px 0 50px 0;
+  margin-bottom: 40px;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .accordion_item {
   position: relative;
   transition: all 0.3s ease;

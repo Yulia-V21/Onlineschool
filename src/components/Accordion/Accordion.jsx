@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AccordionItem from "../../../../components/Accordion/AccordionItem";
+import AccordionItem from "./AccordionItem";
 import "./style.css";
 
 const AccordionBlock = ({ accList }) => {

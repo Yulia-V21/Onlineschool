@@ -5,6 +5,8 @@ import VideoSection from "../../components/VideoSection/VideoSection";
 import RulesSchool from "../../components/RulesSchool/RulesSchool";
 import Certification5to8 from "./Certification5to8";
 import Reviews from "../home/Components/Reviews/Reviews";
+import AccordionBlock from "../../components/Accordion/Accordion";
+import { accList5to8 } from "./Acc5to8"
 
 const Grades5to8Page = () => {
     return(
@@ -16,6 +18,7 @@ const Grades5to8Page = () => {
             <RulesSchool />
             <Certification5to8 />
             <Reviews />
+            <AccordionBlock accList={accList5to8} />
         </div>
     )
 }
