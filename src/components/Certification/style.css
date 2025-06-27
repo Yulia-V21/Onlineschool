@@ -1,0 +1,106 @@
+.certification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 0;
+  position: relative;
+}
+.certification__title {
+  font-family: Gotham_Pro_medium;
+}
+
+.certification__text {
+  font-family: Gotham_Pro_light;
+  font-size: 18px;
+  width: 47%;
+}
+.certification__img {
+  position: absolute;
+  left: 592px;
+  top: 120px;
+  width: 18%;
+}
+.certification__class {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 30px 40px;
+}
+.certification__class_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 0;
+  background-color: #eff2fd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px #999;
+  width: 192px;
+  height: 210px;
+}
+.certification__class_item h4 {
+  font-size: 27px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid rgba(36, 57, 118, 0.4);
+  padding-bottom: 5px;
+}
+.certification__class_item span {
+  text-align: center;
+  font-size: 18px;
+}
+
+.certification__book {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  background-color: aliceblue;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px #999;
+  margin: 50px;
+}
+
+.img_sticker {
+  width: 10%;
+}
+.certification__book_form {
+  position: relative;
+}
+.certification_input_img {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.certification__book_text h4 {
+  font-family: Gotham_Pro_medium;
+  margin-bottom: 10px;
+}
+.certification__book_text p {
+  width: 80%;
+}
+.certification__form_input {
+  padding: 16px 50px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+.certification__book_btn {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border: none;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 15px 30px;
+  margin-left: 15px;
+  background-image: linear-gradient(to right, #864ff1, #49b3f7);
+}
+.certification__book_btn:hover {
+  transform: scale(1.1);
+}

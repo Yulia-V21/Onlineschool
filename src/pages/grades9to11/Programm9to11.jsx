@@ -19,7 +19,7 @@ import Programma from "../../components/Programma/Programma";
 const Programm9to11 = () => {
   return (
     <Programma
-      classes={["5 класс", "6 класс", "7 класс", "8 класс"]}
+      classes={["9 класс", "10 класс", "11 класс"]}
       conditions={[
         "4-5 занятий в день",
         "С понедельника по пятницу",

@@ -75,5 +75,11 @@ export { default as bonus4 } from "./bonus_img4.png";
 export { default as bonus5 } from "./bonus_img5.png";
 export { default as bonus6 } from "./bonus_img6.png"
 export { default as bonus7 } from "./bonus_img7.png";
-
+export { default as rules1 } from "./rules_img1.png";
+export { default as rules2 } from "./rules_img2.png";
+export { default as rules3 } from "./rules_img3.png";
+export { default as rules4 } from "./rules_img4.png";
+export { default as certification_img} from "./certification_img.png";
+export { default as sticker} from "./certification_sticker.png";
+export { default as mail} from "./ico_mail.png";
 

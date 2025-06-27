@@ -1,0 +1,38 @@
+.video__section {
+  padding: 40px 0;
+}
+
+.video__section_title {
+  font-family: Gotham_Pro_medium;
+  font-size: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.video__section_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.video__container {
+  flex: 1 1;
+  padding: 20px 21px;
+  margin-left: 30px;
+}
+
+.video__iframe {
+  width: 94%;
+  height: 315px;
+  border: none;
+  border-radius: 25px;
+}
+
+.video__text {
+  flex: 1;
+}
+.video__text p {
+  font-size: 18px;
+  line-height: 22px;
+  width: 78%;
+}
