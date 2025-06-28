@@ -7,8 +7,8 @@ import {
   ico_litch,
   ico_muz,
   ico_ris,
-} from "../../shared/Images/index";
-import Programma from "../../components/Programma/Programma";
+} from "../../../shared/Images/index";
+import Programma from "../../../components/Programma/Programma";
 
 const Programm1to4 = () => {
   return (

@@ -10,25 +10,22 @@ import {
   ico_chemistry,
   ico_history,
   ico_informatic,
-  ico_geom,
-  ico_physics,
-  ico_society,
-} from "../../shared/Images/index";
-import Programma from "../../components/Programma/Programma";
+} from "../../../shared/Images/index";
+import Programma from "../../../components/Programma/Programma";
 
-const Programm9to11 = () => {
+const Programm5to8 = () => {
   return (
     <Programma
-      classes={["9 класс", "10 класс", "11 класс"]}
+      classes={["5 класс", "6 класс", "7 класс", "8 класс"]}
       conditions={[
-        "4-5 занятий в день",
+        "3-5 занятий в день",
         "С понедельника по пятницу",
         "Каникулы по общему графику",
       ]}
       price="12 500р"
       mainLessons={[
         { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
+        { title: "Математика", img: ico_mat },
         { title: "Английский язык", img: ico_eng },
         { title: "География", img: ico_glob },
         { title: "Литература", img: ico_lit },
@@ -36,9 +33,6 @@ const Programm9to11 = () => {
         { title: "Биология", img: ico_biology },
         { title: "Химия", img: ico_chemistry },
         { title: "Информатика", img: ico_informatic },
-        { title: "Геометрия", img: ico_geom },
-        { title: "Обществознание", img: ico_physics },
-        { title: "Физика", img: ico_society },
       ]}
       secondaryLessons={[
         { title: "Музыка", img: ico_muz },
@@ -48,4 +42,4 @@ const Programm9to11 = () => {
   );
 };
 
-export default Programm9to11;
+export default Programm5to8;

@@ -82,4 +82,6 @@ export { default as rules4 } from "./rules_img4.png";
 export { default as certification_img} from "./certification_img.png";
 export { default as sticker} from "./certification_sticker.png";
 export { default as mail} from "./ico_mail.png";
+export { default as bg_horizontal} from "./bg__horizontal.png";
+
 

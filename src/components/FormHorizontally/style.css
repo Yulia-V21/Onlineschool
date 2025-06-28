@@ -1,0 +1,36 @@
+.form_horizontally {
+  position: relative;
+  padding: 45px 0;
+}
+.form_horizontally_bg {
+  position: absolute;
+  top: -13px;
+  left: 15px;
+  width: 45%;
+  z-index: -1;
+}
+.form_horizontally__form {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0;
+}
+.custom_btn_info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.custom_text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #737373;
+}
+.custom_info_img {
+  cursor: pointer;
+}
+.custom_info_img:hover {
+  transform: scale(1.1);
+}

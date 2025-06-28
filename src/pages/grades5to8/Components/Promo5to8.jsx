@@ -1,4 +1,4 @@
-import Promo from "../../../components/Promo/Promo";
+import Promo from '../../../components/Promo/Promo';
 import { promo_5to8 } from '../../../shared/Images/index'
 
 const Promo5to8 = () => {

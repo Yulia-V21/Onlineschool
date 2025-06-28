@@ -1,12 +1,13 @@
-import Promo1to4 from "./Promo1to4";
-import Programm1to4 from "./Programm1to4";
-import Bonus1to4 from "./Bonus1to4";
+import Promo1to4 from "./Components/Promo1to4";
+import Programm1to4 from "./Components/Programm1to4";
+import Bonus1to4 from "./Components/Bonus1to4";
 import VideoSection from "../../components/VideoSection/VideoSection";
 import RulesSchool from "../../components/RulesSchool/RulesSchool";
-import Certification1to4 from "./Certification1to4";
+import Certification1to4 from "./Components/Certification1to4";
 import Reviews from "../home/Components/Reviews/Reviews";
 import AccordionBlock from "../../components/Accordion/Accordion";
-import {accList1to4} from "./Acc1to4"
+import {accList1to4} from "./Components/Acc1to4"
+import FormHorizontally from "../../components/FormHorizontally/FormHorizontally";
 
 const Grades1to4Page = () => {
   return (
@@ -19,6 +20,7 @@ const Grades1to4Page = () => {
       <Certification1to4 />
       <Reviews />
       <AccordionBlock accList={accList1to4} />
+      <FormHorizontally />
     </div>
   );
 };

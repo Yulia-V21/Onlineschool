@@ -18,14 +18,14 @@ const Header = () => {
     "Контакты": "contacts",
   };
   const { openModal } = useModal();
-  const handleLogoClick = () => {
-    navigate('/')
+  const handleClick = (url) => {
+    navigate(url)
   }
   return (
     <header>
       <div className="container head_container">
         <div className="header_top">
-          <img className="logo" src={logo} alt="Logo" onClick={handleLogoClick} />
+          <img className="logo" src={logo} alt="Logo" onClick={() => handleClick('/')} />
           <div className="header_info">
             <span>8(800)300-37-91</span>
             <CustomButton
@@ -49,7 +49,7 @@ const Header = () => {
             </ul>
             <div className="header_acc">
               <img src={vector} alt="vector" />
-              <span>Личный кабинет</span>
+              <span onClick={() => handleClick('/login')}>Личный кабинет</span>
             </div>
           </div>
         </nav>

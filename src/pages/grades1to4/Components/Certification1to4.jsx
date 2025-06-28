@@ -1,4 +1,4 @@
-import Certification from "../../components/Certification/Certification";
+import Certification from "../../../components/Certification/Certification";
 
 const Certification1to4 = () => {
     const certificationItems = [

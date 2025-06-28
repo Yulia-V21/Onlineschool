@@ -1,0 +1,66 @@
+.personal__bg {
+  background-color: #eff2fd;
+  padding: 50px 0;
+}
+.personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #ffff;
+  border-radius: 25px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.personal img {
+  margin-bottom: 20px;
+}
+.personal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.personal__form_item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.personal__form_item h4 {
+  font-family: Gotham_Pro_medium;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+}
+.personal__input {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.personal__btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, #864ff1, #49b3f7);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.personal__btn:hover {
+  transform: scale(1.1);
+}
+.password__btn {
+  position: absolute;
+  right: 10px;
+  top: 67%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}

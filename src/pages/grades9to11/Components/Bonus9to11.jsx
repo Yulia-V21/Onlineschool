@@ -1,5 +1,5 @@
-import Bonus from "../../components/Bonus/Bonus";
-import { bonus6, bonus2, bonus7, bonus4 } from "../../shared/Images";
+import Bonus from "../../../components/Bonus/Bonus";
+import { bonus6, bonus2, bonus7, bonus4 } from "../../../shared/Images/index";
 
 const bonusItemsData = [
   {

@@ -1,5 +1,5 @@
-import Promo from "../../components/Promo/Promo";
-import { promo_1to4 } from "../../shared/Images/index";
+import Promo from "../../../components/Promo/Promo";
+import { promo_1to4 } from "../../../shared/Images/index";
 
 const Promo1to4 = () => {
   return (
