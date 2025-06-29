@@ -1,5 +1,5 @@
 .btn {
-  font-family: 'Gotham_Pro_medium';
+  font-family: "Gotham_Pro_medium";
   letter-spacing: 1px;
   border: none;
   border-radius: 90px;
@@ -8,7 +8,14 @@
   color: #fff;
   background-image: linear-gradient(to right, #49b3f7, #864ff1);
   cursor: pointer;
+  
 }
 .btn:hover {
   transform: scale(1.1);
 }
+/* @media (max-width: 910px) {
+  .btn {
+    width: 240px;
+    height: 50px;
+  }
+} */

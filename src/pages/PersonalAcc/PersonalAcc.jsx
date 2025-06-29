@@ -1,11 +1,19 @@
-import { useState } from 'react';
+import { useState } from "react";
+import Cookies from "js-cookie";
 import { logo } from "../../shared/Images";
-import './style.css';
+import "./style.css";
 
 const PersonalAcc = () => {
-  const [showPassword, setShowPassword] = useState(false); 
+  const [formData, setFormData] = useState({ login: "", password: "" });
+  const [showPassword, setShowPassword] = useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
+    Cookies.set("login", formData.login, { expires: 1 });
+    Cookies.set("password", formData.password, { expires: 1 });
+  };
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const togglePasswordVisibility = () => {
@@ -19,25 +27,37 @@ const PersonalAcc = () => {
         <form className="personal__form" onSubmit={handleSubmit}>
           <div className="personal__form_item">
             <h4>Логин</h4>
-            <input className="personal__input" type="text" name="log" id="log" />
+            <input
+              onChange={handleInputChange}
+              className="personal__input"
+              type="text"
+              name="login"
+              id="login"
+              value = {formData.login}
+            />
           </div>
-          <div className="personal__form_item" style={{ position: 'relative' }}>
+          <div className="personal__form_item" style={{ position: "relative" }}>
             <h4>Пароль</h4>
             <input
+              onChange={handleInputChange}
               className="personal__input"
-              type={showPassword ? 'text' : 'password'}
+              type={showPassword ? "text" : "password"}
               name="password"
               id="password"
+              value = {formData.password}
             />
-            <button className='password__btn'
+            <button
+              className="password__btn"
               type="button"
               onClick={togglePasswordVisibility}
-              aria-label={showPassword ? 'Скрыть пароль' : 'Показать пароль'}
+              aria-label={showPassword ? "Скрыть пароль" : "Показать пароль"}
             >
-              {showPassword ? '🙈' : '👁️'}
+              {showPassword ? "🙈" : "👁️"}
             </button>
           </div>
-          <button className="personal__btn" type="submit">Войти в аккаунт</button>
+          <button className="personal__btn" type="submit">
+            Войти в аккаунт
+          </button>
         </form>
       </div>
     </div>

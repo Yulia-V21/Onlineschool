@@ -1,41 +1,54 @@
-.main__content {
+.promo__content {
   background-image: url("../../shared/Images/background.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 90%;
 }
-.main_container {
+.promo_container {
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 25px;
 }
-.main__content_info {
+.promo__content_info {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.main__content_btn {
+.promo__content_btn {
   display: flex;
   gap: 10px;
 }
-.main__content_base {
+.promo__content_base {
   display: flex;
   flex-direction: column;
   gap: 35px;
 }
-.main__content_base h4 {
+.promo__content_base h4 {
   font-family: Gotham_Pro_medium;
 }
-.main__content_title {
-  font-family: 'Gotham_Pro_bold';
+.promo__content_title {
+  font-family: "Gotham_Pro_bold";
   font-size: 58px;
   color: #243976;
 }
-.main__content_title span {
+.promo__content_title span {
   color: #49b3f7;
 }
-.main__content_text {
+.promo__content_text {
   font-size: 17px;
   font-weight: normal;
+}
+
+@media (max-width: 1050px) {
+  .promo__content_title {
+    font-size: 50px;
+        line-height: 45px;
+
+  }
+  .promo__right_img {
+    max-width: 400px;
+  }
+
+
 }

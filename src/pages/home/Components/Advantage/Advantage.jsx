@@ -11,23 +11,31 @@ import "./Advantage.css";
 
 const Advantage = () => {
   const [currentImg, setCurrentImg] = useState(advant_img);
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0); // по умолчанию активен первый элемент
   const images = [advant_img, advant_2, advant_3];
+
   const handleImageChange = () => {
     const currentIndex = images.indexOf(currentImg);
     const nextIndex = (currentIndex + 1) % images.length;
     setCurrentImg(images[nextIndex]);
   };
+
   const handleItemClick = (index) => {
-    setActiveIndex(index === activeIndex ? null : index);
-    handleImageChange();
+    if (index === activeIndex) {
+      // если клик по уже активному элементу — отключить активность
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+      handleImageChange();
+    }
   };
+
   return (
     <div className="advantage">
       <div className="advantage_container container">
-        <h3>Дети любят наши уроки потому что:</h3>
         <div className="advantage_content">
           <div className="advantage_content_left">
+            <h3>Дети любят наши уроки потому что:</h3>
             <AdvanteItem
               {...data[0]}
               onClick={() => handleItemClick(0)}
@@ -46,7 +54,7 @@ const Advantage = () => {
             <CustomBtnInfo />
           </div>
           <div className="advantage_content_right">
-            <img src={currentImg} alt="#" />
+            <img className="advantage_content_right_img" src={currentImg} alt="#" />
           </div>
         </div>
       </div>
@@ -55,7 +63,3 @@ const Advantage = () => {
 };
 export default Advantage;
 
-// <AdvanteItem
-//   title="Продвинутая геймификация"
-//   text="Мы используем мини-игры чтобы увлечь ребенка в процесс решения задач и помочь усвоить материал в интересной форме"
-// />

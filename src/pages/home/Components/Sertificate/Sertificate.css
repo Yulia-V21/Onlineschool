@@ -1,18 +1,26 @@
 .sertificate_container {
   padding: 50px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   gap: 10px;
 }
 .sertificate_text {
-width: 42%;
+  width: 42%;
 }
 .sertificate_text h3 {
-font-size: 40px;
-margin-bottom: 10px;
+  font-size: 40px;
+  margin-bottom: 10px;
 }
 .sertificate_text p {
-    font-size: 20px;
+  font-size: 20px;
+}
+
+
+@media (max-width: 970px) {
+  .sertificate_img {
+  width: 50%;
+}
+.sertificate_text h3 {
+  font-size: 30px;
+}
 }

@@ -6,10 +6,10 @@ const Promo = ({title, subtitle, text, img }) => {
   const navigate = useNavigate();
   return (
     <main>
-      <div className="main__content">
-        <div className=" main_container container">
-          <div className="main__content_info">
-            <div className="main__content_btn">
+      <div className="promo__content">
+        <div className=" promo_container container">
+          <div className="promo__content_info">
+            <div className="promo__content_btn">
               <CustomButton
                 text="1-4 классы"
                 width="125px"
@@ -30,11 +30,11 @@ const Promo = ({title, subtitle, text, img }) => {
               />
             </div>
 
-            <div className="main__content_base">
-              <h2 className="main__content_title">
+            <div className="promo__content_base">
+              <h2 className="promo__content_title">
                 {title} <span>{subtitle}</span>
               </h2>
-              <p className="main__content_text">
+              <p className="promo__content_text">
                 {text}
               </p>
               <h4>Семейное образование с нами - это эффективно!</h4>
@@ -42,7 +42,7 @@ const Promo = ({title, subtitle, text, img }) => {
             </div>
           </div>
           <div>
-            <img src={img} alt="group" />
+            <img className='promo__right_img' src={img} alt="group" />
           </div>
         </div>
       </div>

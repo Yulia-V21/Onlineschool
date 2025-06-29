@@ -48,7 +48,7 @@ const ReviewSlider = () => {
             sx={{
               boxSizing: "border-box",
               padding: "8px",
-              width: `${slideWidthPercent}%`,
+              // width: `${slideWidthPercent}%`,
             }}
           >
             <SliderItem

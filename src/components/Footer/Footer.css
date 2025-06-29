@@ -74,3 +74,11 @@
 .footer__info_place span {
   width: 60%;
 }
+
+
+@media (max-width: 1000px) {
+  .footer__info {
+    justify-content: space-between;
+    padding: 35px;
+  }
+}

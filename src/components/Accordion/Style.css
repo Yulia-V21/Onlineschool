@@ -1,11 +1,13 @@
 .accordion__block {
   padding: 50px 0 50px 0;
   margin-bottom: 40px;
+      max-width: 75%;
 }
 .accordion {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
 }
 
 .accordion_item {
@@ -74,3 +76,10 @@
   font-size: 28px;
   color: #243976;
 }
+
+
+/* @media (max-width: 970px) {
+.accordion {
+  width: 100%;
+}
+} */
