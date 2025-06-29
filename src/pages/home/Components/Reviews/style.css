@@ -14,3 +14,9 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 860px) {
+  .reviews_title {
+    font-size: 26px;
+  }
+}

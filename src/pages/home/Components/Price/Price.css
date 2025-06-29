@@ -101,3 +101,13 @@
     width: 97%;
   }
 }
+
+@media (max-width: 910px) {
+  .price_wrap {
+    right: -19px;
+    top: -3px;
+  }
+  .price_wrap h5 {
+    font-size: 20px;
+  }
+}

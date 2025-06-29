@@ -37,3 +37,9 @@
 .application__img {
   width: 80%;
 }
+
+@media (max-width: 1050px) {
+.application_item_content {
+  align-items: flex-start;
+}
+}

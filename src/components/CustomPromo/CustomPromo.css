@@ -6,6 +6,7 @@
   background-color: #eff2fd;
   border-radius: 30px;
   margin-top: 20px;
+  gap: 10px;
 }
 .promo_position {
   position: relative;
@@ -29,12 +30,19 @@
 @media (max-width: 1050px) {
   .promo_img {
     left: 5px;
+    width: 15%;
   }
   .promo_text h3 {
-    font-size: 25px;
+    font-size: 18px;
   }
   .promo_text span {
     display: inline-block;
     width: 90%;
+  }
+}
+@media (max-width: 1050px) {
+  .promo_img {
+    width: 13%;
+    top: 0;
   }
 }

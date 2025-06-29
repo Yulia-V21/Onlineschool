@@ -78,8 +78,12 @@
 }
 
 
-/* @media (max-width: 970px) {
-.accordion {
-  width: 100%;
+@media (max-width: 860px) {
+.accordion_question {
+  font-size: 20px;
 }
-} */
+.accordion_btn {
+    font-size: 30px;
+    padding: 7px 17px;
+}
+}

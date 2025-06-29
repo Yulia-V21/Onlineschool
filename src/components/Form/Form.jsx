@@ -109,8 +109,7 @@ const Form = () => {
 
           <CustomButton
             text="Оставить заявку"
-            width="180px"
-            height="48px"
+            className="btn__medium"
             onClick={handleSubmit}
           />
         </div>

@@ -15,7 +15,6 @@ const Header = () => {
     "Как проходят уроки": "comparison",
     "Преимущества": "benefits",
     "Цены": "price",
-    "Контакты": "contacts",
   };
   const { openModal } = useModal();
   const handleClick = (url) => {
@@ -30,8 +29,7 @@ const Header = () => {
             <span>8(800)300-37-91</span>
             <CustomButton
               text="Записаться на урок"
-              width="222px"
-              height="57px"
+              className="btn__big"
               onClick={openModal}
             />
           </div>

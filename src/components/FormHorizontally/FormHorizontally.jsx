@@ -4,7 +4,7 @@ import {
   placeholder_3,
   tg_40,
   watsapp,
-  bg_horizontal
+  bg_horizontal,
 } from "../../shared/Images";
 import CustomButton from "../CustomButton/CustomButton";
 
@@ -50,8 +50,7 @@ const FormHorizontally = () => {
         <div className="custom_btn_info">
           <CustomButton
             text="Записаться на урок"
-            width="270px"
-            height="65px"
+            className="btn__big"
             onClick={() => console.log("da")}
           />
           <div className="custom_text">

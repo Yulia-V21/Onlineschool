@@ -34,7 +34,6 @@
 }
 .active h4 {
   font-family: "Gotham_Pro_bold";
-  font-size: 58px;
   background: linear-gradient(90deg, #864ff1, #49b3f7);
   -webkit-background-clip: text;
   background-clip: text;
@@ -69,3 +68,15 @@
     width: 95%;
   }
 }
+@media (max-width: 860px) {
+  .advantage_container {
+    padding: 2px;
+  }
+  .advantage_content h3 {
+    font-size: 30px;
+  }
+  .active {
+    padding: 4px 10px;
+  }
+}
+

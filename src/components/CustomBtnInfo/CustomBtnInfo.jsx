@@ -6,10 +6,7 @@ import { useModal } from "../../Context/ModalContext";
 const CustomBtnInfo = () => {
   const { openModal } = useModal();
   const handleTgClick = () => {
-    window.open(
-      "https://t.me/school_of_future_online",
-      "_blank"
-    );
+    window.open("https://t.me/school_of_future_online", "_blank");
   };
   const handleWatsAppClick = () => {
     window.open(
@@ -21,15 +18,24 @@ const CustomBtnInfo = () => {
   return (
     <div className="custom_btn_info">
       <CustomButton
+        className="btn__big"
         text="Записаться на урок"
-        width="270px"
-        height="65px"
         onClick={openModal}
       />
       <div className="custom_text">
         <span>или написать</span>
-        <img className="custom_info_img" src={tg_40} alt="tg_40" onClick={ handleTgClick } />
-        <img className="custom_info_img" src={watsapp} alt="watsapp" onClick={ handleWatsAppClick } />
+        <img
+          className="custom_info_img"
+          src={tg_40}
+          alt="tg_40"
+          onClick={handleTgClick}
+        />
+        <img
+          className="custom_info_img"
+          src={watsapp}
+          alt="watsapp"
+          onClick={handleWatsAppClick}
+        />
       </div>
     </div>
   );

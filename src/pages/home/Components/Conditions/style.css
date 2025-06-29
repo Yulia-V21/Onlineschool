@@ -84,3 +84,9 @@
   gap: 10px;
   width: 50%;
 }
+
+@media (max-width: 950px) {
+  .conditions__content_aspect_item_1 img {
+    width: 40%;
+  }
+}

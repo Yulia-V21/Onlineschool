@@ -30,8 +30,7 @@ const PriceItem = ({ title, subtitle, price, points, src, link }) => {
         </div>
         <CustomBtn
           text="Подробнее"
-          width="160px"
-          height="32px"
+          className="btn__small"
           onClick={handleNav}
         />
         <img className="price__img" src={src} alt="#" />

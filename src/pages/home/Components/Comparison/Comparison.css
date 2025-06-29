@@ -68,3 +68,8 @@ display: block;
 }
 
 }
+@media (max-width: 860px) {
+  .comprassion__img_right {
+  right:-26px;
+}
+}

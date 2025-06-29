@@ -49,6 +49,9 @@
   .promo__right_img {
     max-width: 400px;
   }
-
-
+}
+@media (max-width: 860px) {
+  .promo__right_img {
+    max-width: 380px;
+  }
 }

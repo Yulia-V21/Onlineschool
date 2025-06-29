@@ -193,10 +193,10 @@ const Programma = ({
             <CustomButton
               key={item}
               text={item}
-              width="125px"
-              height="35px"
               onClick={() => setSelectedClass(item)}
-              className={selectedClass === item ? "selected" : ""}
+              className={`button ${
+                selectedClass === item ? "selected" : ""
+              } btn__small`}
             />
           ))}
         </div>
@@ -227,8 +227,7 @@ const Programma = ({
               </div>
               <CustomButton
                 text={price}
-                width="190px"
-                height="52px"
+                className="btn__big"
                 onClick={() => console.log("Цена")}
               />
             </div>
@@ -301,8 +300,7 @@ const Programma = ({
             ))}
             <CustomButton
               text="Записаться на урок"
-              width="210px"
-              height="50px"
+              className="btn__big"
               onClick={handleSubmit}
             />
           </div>

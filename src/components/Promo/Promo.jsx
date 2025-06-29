@@ -1,8 +1,8 @@
-import CustomButton from '../CustomButton/CustomButton'
-import CustomBtnInfo from '../CustomBtnInfo/CustomBtnInfo'
-import { useNavigate } from 'react-router-dom';
+import CustomButton from "../CustomButton/CustomButton";
+import CustomBtnInfo from "../CustomBtnInfo/CustomBtnInfo";
+import { useNavigate } from "react-router-dom";
 import "./style.css";
-const Promo = ({title, subtitle, text, img }) => {
+const Promo = ({ title, subtitle, text, img }) => {
   const navigate = useNavigate();
   return (
     <main>
@@ -12,21 +12,18 @@ const Promo = ({title, subtitle, text, img }) => {
             <div className="promo__content_btn">
               <CustomButton
                 text="1-4 классы"
-                width="125px"
-                height="30px"
-                onClick={() => navigate('/grades1-4')}
+                className="btn__small"
+                onClick={() => navigate("/grades1-4")}
               />
               <CustomButton
                 text="5-8 классы"
-                width="125px"
-                height="30px"
-                onClick={() => navigate('/grades5-8')}
+                className="btn__small"
+                onClick={() => navigate("/grades5-8")}
               />
               <CustomButton
                 text="9-11 классы"
-                width="125px"
-                height="30px"
-                onClick={() => navigate('/grades9-11')}
+                className="btn__small"
+                onClick={() => navigate("/grades9-11")}
               />
             </div>
 
@@ -34,15 +31,13 @@ const Promo = ({title, subtitle, text, img }) => {
               <h2 className="promo__content_title">
                 {title} <span>{subtitle}</span>
               </h2>
-              <p className="promo__content_text">
-                {text}
-              </p>
+              <p className="promo__content_text">{text}</p>
               <h4>Семейное образование с нами - это эффективно!</h4>
               <CustomBtnInfo />
             </div>
           </div>
           <div>
-            <img className='promo__right_img' src={img} alt="group" />
+            <img className="promo__right_img" src={img} alt="group" />
           </div>
         </div>
       </div>
