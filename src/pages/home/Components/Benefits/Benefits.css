@@ -36,16 +36,18 @@
   width: 82%;
 }
 
-
-@media (max-width: 860px)  {
-.benefits_item img {
+@media (max-width: 860px) {
+  .benefits_item img {
     width: 135px;
     height: 135px;
-}
-.benefits_points {
-align-items: flex-start;
-}
-.benefits_item p {
-  font-size: 13px;
-}
+  }
+  .benefits_points {
+    align-items: flex-start;
+  }
+  .benefits_item {
+    width: 50%;
+  }
+  .benefits_item p {
+    font-size: 13px;
+  }
 }

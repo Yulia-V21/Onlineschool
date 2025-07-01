@@ -39,7 +39,27 @@
 }
 
 @media (max-width: 1050px) {
-.application_item_content {
-  align-items: flex-start;
+  .application_item_content {
+    align-items: flex-start;
+  }
 }
+
+@media (max-width: 640px) {
+  .application__content {
+    flex-direction: column-reverse;
+  }
+  .application_item_content {
+    max-width: 100%;
+    align-items: center;
+  }
+  .application__text {
+    text-align: center;
+  }
+  .application__img {
+    width: 51%;
+  }
+  .application__content {
+    display: flex;
+    gap: 40px;
+  }
 }

@@ -2,7 +2,7 @@ import "./style.css";
 
 const VideoSection = () => {
   return (
-    <div className="video__section">
+    <div className="video__section container">
       <h2 className="video__section_title">Как проходит урок</h2>
 
       <div className="video__section_content">

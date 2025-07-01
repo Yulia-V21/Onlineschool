@@ -1,5 +1,6 @@
 .advantage {
   background-color: #eff2fd;
+  padding: 20px 0;
 }
 .advantage_container {
   padding: 60px 0 60px 0;
@@ -78,5 +79,26 @@
   .active {
     padding: 4px 10px;
   }
+  .advantage_content_left_text h4 {
+    font-size: 16px;
+  }
+  .advantage_content_right_img {
+    width: 80%;
+  }
 }
 
+@media (max-width: 860px) {
+  .advantage_content {
+    position: relative;
+  }
+  .advantage_content_left {
+    width: 100%;
+    gap: 20px;
+  }
+  .advantage_content_right img {
+    position: absolute;
+    bottom: -32px;
+    right: -8px;
+    width: 35%;
+  }
+}

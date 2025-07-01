@@ -71,7 +71,7 @@ const Conditions = () => {
             </div>
           </div>
           <div className="conditions__content_aspect_item">
-            <div className="conditions__content_aspect_item_1">
+            <div className="conditions__content_aspect_item_1 conditions__reverse">
               <div className="conditions__content_text">
                 <h4>Живые уроки с учителем </h4>
                 <span>
@@ -81,7 +81,7 @@ const Conditions = () => {
               </div>
               <img src={cond_aspect_3} alt="#" />
             </div>
-            <div className="conditions__content_aspect_item_1">
+            <div className="conditions__content_aspect_item_1 conditions__reverse">
               <div className="conditions__content_text">
                 <h4>Домашнее задание </h4>
                 <span>

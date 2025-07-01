@@ -72,3 +72,20 @@
   color: #1e3a8a;
   text-decoration: underline;
 }
+
+@media (max-width: 860px) {
+.form {
+    padding: 20px;
+}
+}
+
+@media (max-width: 640px) {
+.form_content {
+    padding: 10px 7px;
+}
+.bg_form {
+    top: -45px;
+    left: -63px;
+    width: 80%;
+}
+}

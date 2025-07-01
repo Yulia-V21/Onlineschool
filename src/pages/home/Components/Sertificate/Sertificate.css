@@ -15,12 +15,36 @@
   font-size: 20px;
 }
 
-
 @media (max-width: 970px) {
   .sertificate_img {
-  width: 50%;
+    width: 100%;
+  }
+  .sertificate_text h3 {
+    font-size: 30px;
+  }
 }
-.sertificate_text h3 {
-  font-size: 30px;
-}
+@media (max-width: 860px) {
+  .sertificate_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sertificate_text {
+    width: 100%;
+  }
+  .sertificate_text h3 {
+    font-size: 32px;
+    font-family: "Gotham_Pro_medium";
+    text-align: center;
+  }
+  .sertificate_text p {
+    font-size: 17px;
+    text-align: center;
+  }
+  .sertificate_img {
+    display: flex;
+    justify-content: center;
+  }
+  .sertificate_img img {
+    width: 58%;
+  }
 }

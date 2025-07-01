@@ -1,10 +1,4 @@
 import {
-  ico_ru,
-  ico_mat,
-  ico_eng,
-  ico_glob,
-  ico_lit,
-  ico_litch,
   ico_muz,
   ico_ris,
 } from "../../../shared/Images/index";
@@ -20,14 +14,6 @@ const Programm1to4 = () => {
         "Каникулы по общему графику",
       ]}
       price="12 500р"
-      mainLessons={[
-        { title: "Русский язык", img: ico_ru },
-        { title: "Математика", img: ico_mat },
-        { title: "Английский язык", img: ico_eng },
-        { title: "Окружающий мир", img: ico_glob },
-        { title: "Литература", img: ico_lit },
-        { title: "Литературное чтение", img: ico_litch },
-      ]}
       secondaryLessons={[
         { title: "Музыка", img: ico_muz },
         { title: "Рисование", img: ico_ris },

@@ -7,9 +7,7 @@ const Promo = ({ title, subtitle, text, img }) => {
   return (
     <main>
       <div className="promo__content">
-        <div className=" promo_container container">
-          <div className="promo__content_info">
-            <div className="promo__content_btn">
+         <div className="promo__content_btn container">
               <CustomButton
                 text="1-4 классы"
                 className="btn__small"
@@ -26,7 +24,8 @@ const Promo = ({ title, subtitle, text, img }) => {
                 onClick={() => navigate("/grades9-11")}
               />
             </div>
-
+        <div className=" promo_container container">
+          <div className="promo__content_info">
             <div className="promo__content_base">
               <h2 className="promo__content_title">
                 {title} <span>{subtitle}</span>

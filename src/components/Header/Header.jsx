@@ -36,7 +36,7 @@ const Header = () => {
         </div>
         <nav>
           <div className="header__bottom">
-            <ul className="header__list">
+      
               <ul className="header__list">
                 {Object.entries(menuItems).map(([text, sectionId]) => (
                   <li key={text} onClick={() => scrollToSection(sectionId)}>
@@ -44,7 +44,6 @@ const Header = () => {
                   </li>
                 ))}
               </ul>
-            </ul>
             <div className="header_acc">
               <img src={vector} alt="vector" />
               <span onClick={() => handleClick('/login')}>Личный кабинет</span>

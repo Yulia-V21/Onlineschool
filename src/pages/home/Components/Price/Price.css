@@ -95,19 +95,41 @@
     right: -33px;
   }
   .price__img {
-    right: -48px;
+    right: -1px;
+    width: 34%;
   }
   .price__item_title span {
     width: 97%;
   }
 }
 
-@media (max-width: 910px) {
-  .price_wrap {
-    right: -19px;
-    top: -3px;
+@media (max-width: 920px) {
+  .price__container h3 {
+    text-align: center;
   }
+  .price_wrap {
+    padding: 15px 21px 13px 13px;
+    right: 10px;
+    top: -11px;
+  }
+
   .price_wrap h5 {
     font-size: 20px;
+  }
+  .price__img {
+    width: 47%;
+    z-index: 999;
+    right: -41px;
+  }
+
+  .price__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .price_item {
+    width: 43%;
+  }
+  .price__img {
+    width: 35%;
   }
 }

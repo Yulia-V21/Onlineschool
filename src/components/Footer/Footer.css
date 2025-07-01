@@ -75,10 +75,58 @@
   width: 60%;
 }
 
-
 @media (max-width: 1000px) {
   .footer__info {
     justify-content: space-between;
     padding: 35px;
   }
 }
+@media (max-width: 900px) {
+  .footer__info_title {
+    font-size: 16px;
+  }
+  .footer__info_place img,
+  .footer__info_phone img {
+    width: 10%;
+  }
+  .footer__info_place,
+  .footer__info_phone {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .footer__info_class,
+  .footer__info_doc,
+  .footer__info_soc,
+  .footer__info_adress {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__info_logo {
+    width: 20%;
+  }
+  .footer_soc_list {
+    gap: 1px; 
+  }
+  .footer_soc_list img {
+    width: 75%;
+  }
+  .footer__info_list li,
+  .footer__info_license span {
+    font-size: 12px;
+  }
+  .footer__info_license img {
+    width: 16%;
+  }
+}
+@media (max-width: 800px) {
+  .footer__info {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:12px;
+  }
+  .footer__info_adress {
+    flex-direction: row;
+  }
+}
+

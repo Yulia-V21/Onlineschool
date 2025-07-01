@@ -1,13 +1,12 @@
 .accordion__block {
   padding: 50px 0 50px 0;
   margin-bottom: 40px;
-      max-width: 75%;
+  max-width: 75%;
 }
 .accordion {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
 }
 
 .accordion_item {
@@ -77,13 +76,21 @@
   color: #243976;
 }
 
-
 @media (max-width: 860px) {
-.accordion_question {
-  font-size: 20px;
-}
-.accordion_btn {
+  .accordion_question {
+    font-size: 20px;
+  }
+  .accordion_btn {
     font-size: 30px;
     padding: 7px 17px;
+  }
+  .accordion_body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 640px) {
+.accordion__block {
+    padding: 50px 0 29px 0;
+    margin-bottom: 0px;
 }
 }

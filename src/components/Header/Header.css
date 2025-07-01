@@ -62,3 +62,22 @@
 }
 
 }
+
+@media (max-width: 800px) {
+.header__list {
+  gap: 10px;
+}
+}
+@media (max-width: 710px) {
+.header_info,
+.header__bottom {
+  display: none;
+}
+.head_container {
+    gap: 10px;
+}
+
+
+}
+
+

@@ -15,8 +15,8 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 950px) {
   .reviews_title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }

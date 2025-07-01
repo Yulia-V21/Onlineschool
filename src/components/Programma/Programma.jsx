@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react"; // Добавляем useEffect для начальной установки
 import CustomButton from "../CustomButton/CustomButton";
 import ProgLesson from "./ProgLesson";
 import {
@@ -21,6 +21,16 @@ import {
   ico_prog2,
   ico_prog3,
   class1,
+  class2,
+  class3,
+  class4,
+  class5,
+  class6,
+  class7,
+  class8,
+  class9,
+  class10,
+  class11,
   placeholder_1,
   placeholder_2,
   placeholder_3,
@@ -42,6 +52,34 @@ const Programma = ({
     parentName: "",
     phone: "",
   });
+
+  const [currentImage, setCurrentImage] = useState(class1);
+
+  useEffect(() => {
+    // Установка начальной картинки на основе первого класса
+    const initialClassNumber = parseInt(classes[0].split(" ")[0]);
+    switch (initialClassNumber) {
+      case 1:
+      case 2:
+      case 3:
+      case 4:
+        setCurrentImage(class1);
+        break;
+      case 5:
+      case 6:
+      case 7:
+      case 8:
+        setCurrentImage(class5);
+        break;
+      case 9:
+      case 10:
+      case 11:
+        setCurrentImage(class9);
+        break;
+      default:
+        setCurrentImage(class1);
+    }
+  }, [classes]); // Зависимость от classes для перерасчёта при изменении
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -184,6 +222,48 @@ const Programma = ({
 
   const currentLessons = getLessonsByClass(selectedClass);
 
+  // Обновление картинки при выборе класса
+  const handleClassClick = (className) => {
+    const classNumber = parseInt(className.split(" ")[0]);
+    switch (classNumber) {
+      case 1:
+        setCurrentImage(class1);
+        break;
+      case 2:
+        setCurrentImage(class2);
+        break;
+      case 3:
+        setCurrentImage(class3);
+        break;
+      case 4:
+        setCurrentImage(class4);
+        break;
+      case 5:
+        setCurrentImage(class5);
+        break;
+      case 6:
+        setCurrentImage(class6);
+        break;
+      case 7:
+        setCurrentImage(class7);
+        break;
+      case 8:
+        setCurrentImage(class8);
+        break;
+      case 9:
+        setCurrentImage(class9);
+        break;
+      case 10:
+        setCurrentImage(class10);
+        break;
+      case 11:
+        setCurrentImage(class11);
+        break;
+      default:
+        setCurrentImage(class1); // Значение по умолчанию
+    }
+    setSelectedClass(className);
+  };
   return (
     <div className="prog">
       <div className="container prog__class">
@@ -193,7 +273,7 @@ const Programma = ({
             <CustomButton
               key={item}
               text={item}
-              onClick={() => setSelectedClass(item)}
+              onClick={() => handleClassClick(item)}
               className={`button ${
                 selectedClass === item ? "selected" : ""
               } btn__small`}
@@ -231,11 +311,10 @@ const Programma = ({
                 onClick={() => console.log("Цена")}
               />
             </div>
-
             <div className="prog_content_top_right">
               <img
                 className="prog_content_top_right_img"
-                src={class1}
+                src={currentImage}
                 alt="#"
               />
               <h4>Предметы</h4>
@@ -264,7 +343,6 @@ const Programma = ({
               ))}
             </div>
           </div>
-
           <div className="prog__form">
             {[
               {
