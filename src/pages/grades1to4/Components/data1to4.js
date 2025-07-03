@@ -1,4 +1,12 @@
-import { bonus1, bonus2, bonus3, bonus4 } from "../../../shared/Images/index";
+import { bonus1, bonus2, bonus3, bonus4, promo_1to4 } from "../../../shared/Images/index";
+
+
+export const promoData = {
+  title: "Начальная онлайн школа",
+  subtitle: "1-4 класс",
+  text: "Любовь к учебе закладывается в первые годы школы. Поэтому, мы прикладываем максимальные усилия, чтобы сделать образовательный процесс увлекательным и интересным для детей.",
+  img: promo_1to4,
+};
 
 export const bonusItemsData = [
   {
