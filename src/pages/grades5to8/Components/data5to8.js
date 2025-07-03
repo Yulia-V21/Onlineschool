@@ -1,4 +1,11 @@
-import { bonus5, bonus2, bonus3, bonus4 } from "../../../shared/Images";
+import { bonus5, bonus2, bonus3, bonus4, promo_5to8} from "../../../shared/Images";
+
+export const promoData = {
+  title: 'Средняя онлайн школа',
+  subtitle: '5-8 класс',
+  text: "Ученики 5-8 классов онлайн-школы начинают заниматься в 9:00 по Московскому времени. При не высокой нагрузке это позволяет более эффективно планировать свое время после учебы.",
+  img: promo_5to8,
+};
 
  export const bonusItemsData = [
   {

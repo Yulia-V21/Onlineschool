@@ -1,4 +1,12 @@
-  import { bonus6, bonus2, bonus7, bonus4 } from "../../../shared/Images/index";
+  import { bonus6, bonus2, bonus7, bonus4,promo_9to11 } from "../../../shared/Images/index";
+
+  export const promoData = {
+    title: 'Старшая онлайн школа',
+    subtitle: '9-11 класс',
+    text: 'Мы даем детям реальные знания, потому наши классы не превышают 10 человек. А интерактивность и вовлеченность делает уроки интересными для детей.',
+    img: promo_9to11
+  };
+
   export const bonusItemsData = [
   {
     title: 'Подготовка к ОГЭ/ЕГЭ',
