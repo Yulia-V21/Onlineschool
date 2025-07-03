@@ -1,5 +1,5 @@
 import "./Header.css";
-import {logo, head_menu} from "../../shared/Images/index";
+import { logo, head_menu, menu_close } from "../../shared/Images/index";
 import vector from "../../shared/Images/Vector.png";
 import CustomButton from "../CustomButton/CustomButton";
 import { useModal } from "../../Context/ModalContext";
@@ -25,7 +25,9 @@ const Header = () => {
 
   return (
     <header>
-      <div className="container head_container">
+      <div
+        className={`container head_container ${isMenuOpen ? "menu-open" : ""}`}
+      >
         <div className="header_top">
           <img
             className="logo"
