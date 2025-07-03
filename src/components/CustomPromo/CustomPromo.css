@@ -75,3 +75,28 @@
     top: 29px;
   }
 }
+
+@media (max-width: 480px) {
+  .promo_img {
+    display: none;
+  }
+  .promo_text {
+    width: 78%;
+  }
+  .promo_text h3 {
+    font-size: 20px;
+  }
+  .promo_text span {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .promo_text h3 {
+    font-size: 17px;
+  }
+  .promo_text {
+    font-size: 13px;
+  }
+}

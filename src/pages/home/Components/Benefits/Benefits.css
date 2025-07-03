@@ -51,3 +51,18 @@
     font-size: 13px;
   }
 }
+
+@media (max-width: 480px) {
+  .benefits__title {
+    font-size: 24px;
+  }
+      .benefits_item {
+        width: 70%;
+      }
+}
+
+@media (max-width: 330px) {
+.benefits_item p {
+    width: 100%;
+}
+}

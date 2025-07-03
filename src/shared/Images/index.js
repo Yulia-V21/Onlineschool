@@ -1,4 +1,5 @@
 export { default as logo } from "./logoHeader.png";
+export { default as head_menu } from "./header_menu.png";
 export { default as license } from "./ic_license.png";
 export { default as vk } from "./ic_vk.png";
 export { default as tg } from "./ic_tg.png";
@@ -52,7 +53,7 @@ export { default as promo_9to11 } from "./promo_9to11.png";
 export { default as ico_prog1 } from "./ico_prog1.png";
 export { default as ico_prog2 } from "./ico_prog2.png";
 export { default as ico_prog3 } from "./ico_prog3.png";
-export { default as class1 } from "./class1.png";
+export { default as class1 } from "./1class.png";
 export { default as class2 } from "./2class.png";
 export { default as class3 } from "./3class.png";
 export { default as class4 } from "./4class.png";

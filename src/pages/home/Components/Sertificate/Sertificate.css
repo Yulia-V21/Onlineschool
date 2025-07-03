@@ -48,3 +48,24 @@
     width: 58%;
   }
 }
+
+@media (max-width: 480px) {
+  .sertificate_text h3 {
+    font-size: 26px;
+  }
+  .sertificate_text p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 330px) {
+  .sertificate_text h3 {
+    font-size: 20px;
+  }
+  .sertificate_text p {
+    font-size: 13px;
+  }
+  .sertificate_img img {
+    width: 66%;
+  }
+}

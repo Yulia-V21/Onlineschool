@@ -5,7 +5,7 @@ import "./style.css";
 const Promo = ({ title, subtitle, text, img }) => {
   const navigate = useNavigate();
   return (
-    <main>
+    <div>
       <div className="promo__content">
          <div className="promo__content_btn container">
               <CustomButton
@@ -40,7 +40,7 @@ const Promo = ({ title, subtitle, text, img }) => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
 export default Promo;

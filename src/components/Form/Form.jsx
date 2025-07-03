@@ -8,26 +8,22 @@ import {
 import "./style.css";
 
 const Form = () => {
-  // Создаем состояние для хранения данных формы
   const [formData, setFormData] = useState({
     class: "",
     parentName: "",
     phone: "",
   });
 
-  // Обработчик изменения любого поля формы
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async () => {
-    // Проверка обязательных полей
     if (!formData.class || !formData.parentName || !formData.phone) {
       alert("Пожалуйста, заполните все поля");
-      return; // прерываем выполнение функции
+      return; 
     }
-
     try {
       const response = await fetch(
         "https://jsonplaceholder.typicode.com/posts",

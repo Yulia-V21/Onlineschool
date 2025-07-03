@@ -24,7 +24,7 @@ const Certification = ({ items }) => {
                 .then((response) => response.json())
                 .then((json) => {
                     console.log('Ответ от API:', json);
-                    alert('Запрос отправлен! Проверьте консоль для деталей.'); 
+                    alert('Запрос отправлен!'); 
                     emailInput.value = ''; 
                 })
                 .catch((error) => {

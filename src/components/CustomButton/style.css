@@ -34,3 +34,14 @@
     height: 50px;
   }
 }
+
+@media (max-width: 330px) {
+.btn__small {
+    width: 125px;
+    height: 34px;
+}
+.btn__medium {
+    width: 176px;
+    height: 45px;
+}
+}

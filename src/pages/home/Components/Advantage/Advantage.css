@@ -102,3 +102,25 @@
     width: 35%;
   }
 }
+
+@media (max-width: 480px) {
+  .advantage_content h3 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 330px) {
+  .advantage_content h3 {
+    font-size: 20px;
+  }
+  .advantage_content_left_text h4 {
+    font-size: 14px;
+  }
+  .advantage_content_left_text p {
+    font-size: 13px;
+    line-height: 126%;
+}
+    .advantage_content_right img {
+      display: none;
+    }
+}

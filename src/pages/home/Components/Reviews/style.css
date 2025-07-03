@@ -20,3 +20,14 @@
     font-size: 24px;
   }
 }
+@media (max-width: 500px) {
+  .reviews {
+    gap: 2px;
+  }
+}
+
+@media (max-width: 330px) {
+  .reviews_title {
+    font-size: 17px;
+  }
+}

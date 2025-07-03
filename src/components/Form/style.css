@@ -11,7 +11,7 @@
   background-color: #fff;
   padding: 35px 20px;
   border-radius: 25px;
-  box-shadow: 0 4px 23px #b0b0b0; 
+  box-shadow: 0 4px 23px #b0b0b0;
 }
 
 .form_title {
@@ -74,18 +74,33 @@
 }
 
 @media (max-width: 860px) {
-.form {
+  .form {
     padding: 20px;
-}
+  }
 }
 
 @media (max-width: 640px) {
-.form_content {
+  .form_content {
     padding: 10px 7px;
-}
-.bg_form {
+  }
+  .bg_form {
     top: -45px;
     left: -63px;
     width: 80%;
+  }
 }
+@media (max-width: 500px) {
+  .form {
+    max-width: 370px;
+  }
+}
+@media (max-width: 350px) {
+  .bg_form {
+    top: -19px;
+    left: -18px;
+    width: 76%;
+  }
+  .form_input_container {
+    width: 86%;
+  }
 }

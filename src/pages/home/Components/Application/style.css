@@ -44,13 +44,16 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 660px) {
   .application__content {
     flex-direction: column-reverse;
   }
   .application_item_content {
     max-width: 100%;
     align-items: center;
+  }
+  .application__title {
+    text-align: center;
   }
   .application__text {
     text-align: center;
@@ -61,5 +64,15 @@
   .application__content {
     display: flex;
     gap: 40px;
+  }
+}
+
+@media (max-width: 350px) {
+  .application__title {
+    font-size: 25px;
+  }
+  .application__text {
+    width: 95%;
+    font-size: 13px;
   }
 }

@@ -24,3 +24,19 @@
     height: 50px;
   }
 }
+
+@media (max-width: 330px) {
+  .custom_btn_info {
+    gap: 6px;
+  }
+  .custom_btn_info button {
+    width: 191px;
+    height: 47px;
+  }
+  .custom_info_img {
+    width: 10%;
+  }
+  .custom_text {
+    gap: 10px;
+  }
+}

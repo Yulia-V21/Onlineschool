@@ -1,22 +1,22 @@
-import Bonus9to11 from "./Components/Bonus9to11";
+import Bonus from "../../components/Bonus/Bonus";
 import Programm9to11 from "./Components/Programm9to11";
 import Promo9to11 from "./Components/Promo9to11";
 import VideoSection from "../../components/VideoSection/VideoSection";
 import RulesSchool from "../../components/RulesSchool/RulesSchool";
-import Certification9to11 from "./Components/Certification9to11";
+import Certification from "../../components/Certification/Certification";
 import Reviews from "../home/Components/Reviews/Reviews";
 import AccordionBlock from "../../components/Accordion/Accordion";
-import { accList9to11 } from "./Components/Acc9to11";
+import { accList9to11, certificationItems, bonusItemsData } from "./Components/data9to11";
 import FormHorizontally from "../../components/FormHorizontally/FormHorizontally";
 const Grades9to11Page = () => {
   return (
     <div>
       <Promo9to11 />
       <Programm9to11 />
-      <Bonus9to11 />
+      <Bonus items={bonusItemsData} />
       <VideoSection />
       <RulesSchool />
-      <Certification9to11 />
+      <Certification items={certificationItems} />
       <Reviews />
       <AccordionBlock accList={accList9to11} />
       <FormHorizontally />

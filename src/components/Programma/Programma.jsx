@@ -1,22 +1,7 @@
-import { useState, useEffect } from "react"; // Добавляем useEffect для начальной установки
+import { useState, useEffect } from "react";
 import CustomButton from "../CustomButton/CustomButton";
 import ProgLesson from "./ProgLesson";
 import {
-  ico_ru,
-  ico_mat,
-  ico_eng,
-  ico_glob,
-  ico_lit,
-  ico_litch,
-  ico_muz,
-  ico_ris,
-  ico_biology,
-  ico_chemistry,
-  ico_history,
-  ico_informatic,
-  ico_geom,
-  ico_physics,
-  ico_society,
   ico_prog1,
   ico_prog2,
   ico_prog3,
@@ -35,6 +20,7 @@ import {
   placeholder_2,
   placeholder_3,
 } from "../../shared/Images/index";
+import { lessonMap } from "./data";
 import "./style.css";
 
 const Programma = ({
@@ -56,7 +42,6 @@ const Programma = ({
   const [currentImage, setCurrentImage] = useState(class1);
 
   useEffect(() => {
-    // Установка начальной картинки на основе первого класса
     const initialClassNumber = parseInt(classes[0].split(" ")[0]);
     switch (initialClassNumber) {
       case 1:
@@ -79,7 +64,7 @@ const Programma = ({
       default:
         setCurrentImage(class1);
     }
-  }, [classes]); // Зависимость от classes для перерасчёта при изменении
+  }, [classes]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -91,138 +76,17 @@ const Programma = ({
     localStorage.setItem("parentName", formData.parentName);
     localStorage.setItem("phone", formData.phone);
     console.log("Данные сохранены в localStorage:", formData);
-    alert("Заявка сохранена локально!");
+    alert("Данные сохранены в localStorage!");
   };
   const getLessonsByClass = (className) => {
     const classNumber = parseInt(className.split(" ")[0]);
     console.log("Selected class:", className, "Class number:", classNumber);
-    const lessonMap = {
-      1: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Математика", img: ico_mat },
-        { title: "Литературное чтение", img: ico_litch },
-        { title: "Окружающий мир", img: ico_glob },
-      ],
-      2: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Математика", img: ico_mat },
-        { title: "Литература", img: ico_lit },
-        { title: "Окружающий мир", img: ico_glob },
-        { title: "Английский язык", img: ico_eng },
-      ],
-      3: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Математика", img: ico_mat },
-        { title: "Литература", img: ico_lit },
-        { title: "Окружающий мир", img: ico_glob },
-        { title: "Английский язык", img: ico_eng },
-      ],
-      4: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Математика", img: ico_mat },
-        { title: "Литература", img: ico_lit },
-        { title: "Окружающий мир", img: ico_glob },
-        { title: "Английский язык", img: ico_eng },
-      ],
-      5: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Математика", img: ico_mat },
-        { title: "Литература", img: ico_lit },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Информатика", img: ico_informatic },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-      ],
-      6: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
-        { title: "Информатика", img: ico_informatic },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-        { title: "Обществознание", img: ico_society },
-        { title: "Литература", img: ico_lit },
-      ],
-      7: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
-        { title: "Химия", img: ico_chemistry },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Информатика", img: ico_informatic },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-        { title: "Физика", img: ico_physics },
-        { title: "Геометрия", img: ico_geom },
-        { title: "Обществознание", img: ico_society },
-        { title: "Литература", img: ico_lit },
-      ],
-      8: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
-        { title: "Химия", img: ico_chemistry },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Информатика", img: ico_informatic },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-        { title: "Физика", img: ico_physics },
-        { title: "Геометрия", img: ico_geom },
-        { title: "Обществознание", img: ico_society },
-        { title: "Литература", img: ico_lit },
-      ],
-      9: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
-        { title: "Химия", img: ico_chemistry },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Информатика", img: ico_informatic },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-        { title: "Физика", img: ico_physics },
-        { title: "Геометрия", img: ico_geom },
-        { title: "Обществознание", img: ico_society },
-        { title: "Литература", img: ico_lit },
-      ],
-      10: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
-        { title: "Химия", img: ico_chemistry },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Информатика", img: ico_informatic },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-        { title: "Физика", img: ico_physics },
-        { title: "Геометрия", img: ico_geom },
-        { title: "Обществознание", img: ico_society },
-        { title: "Литература", img: ico_lit },
-      ],
-      11: [
-        { title: "Русский язык", img: ico_ru },
-        { title: "Алгебра", img: ico_mat },
-        { title: "Химия", img: ico_chemistry },
-        { title: "История", img: ico_history },
-        { title: "Биология", img: ico_biology },
-        { title: "Информатика", img: ico_informatic },
-        { title: "Английский язык", img: ico_eng },
-        { title: "География", img: ico_glob },
-        { title: "Физика", img: ico_physics },
-        { title: "Геометрия", img: ico_geom },
-        { title: "Обществознание", img: ico_society },
-        { title: "Литература", img: ico_lit },
-      ],
-    };
 
     return lessonMap[classNumber] || initialMainLessons;
   };
 
   const currentLessons = getLessonsByClass(selectedClass);
 
-  // Обновление картинки при выборе класса
   const handleClassClick = (className) => {
     const classNumber = parseInt(className.split(" ")[0]);
     switch (classNumber) {
@@ -260,7 +124,7 @@ const Programma = ({
         setCurrentImage(class11);
         break;
       default:
-        setCurrentImage(class1); // Значение по умолчанию
+        setCurrentImage(class1); 
     }
     setSelectedClass(className);
   };

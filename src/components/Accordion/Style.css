@@ -37,7 +37,6 @@
 .accordion_header {
   display: flex;
   justify-content: space-between;
-  padding: 25px 40px 25px 34px;
   align-items: center;
   padding: 25px 40px 25px 34px;
   background-color: #eff2fd;
@@ -89,8 +88,34 @@
   }
 }
 @media (max-width: 640px) {
-.accordion__block {
+  .accordion__block {
     padding: 50px 0 29px 0;
     margin-bottom: 0px;
+  }
 }
+
+@media (max-width: 480px) {
+  .accordion_header {
+    padding: 19px 10px 15px 20px;
+  }
+  .accordion_question {
+    font-size: 16px;
+  }
+  .accordion_body {
+    font-size: 15px;
+    padding: 8px 20px 26px 26px;
+  }
+}
+
+@media (max-width: 350px) {
+  .accordion_question {
+    font-size: 12px;
+  }
+  .accordion_btn {
+    font-size: 25px;
+    padding: 2px 10px;
+  }
+  .accordion_body {
+    font-size: 12px;
+  }
 }
