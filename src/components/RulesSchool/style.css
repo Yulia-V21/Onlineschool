@@ -24,7 +24,8 @@
   color: #243976;
   cursor: pointer;
 }
-.rules__btn:hover {
+
+.rules__btn.active {
   color: #fff;
   background: linear-gradient(to right, #4271df, #789cf1);
 }

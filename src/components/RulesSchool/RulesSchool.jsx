@@ -4,11 +4,13 @@ import './style.css'
 
 const RulesSchool = () => {
   const [content, setContent] = useState('lesson');
+  const [activeType, setActiveType] = useState('lesson');
 
   const currentItem = rulesData.find(item => item.type === content);
 
   function handleClick(type) {
     setContent(type);
+    setActiveType(type);
   }
 
   return (
@@ -16,10 +18,10 @@ const RulesSchool = () => {
       <div className="rules__container container">
         <h3 className="rules__title">Что внутри</h3>
         <div className="rules__btns">
-          <button className="rules__btn" onClick={() => handleClick('lesson')}>Живой урок с учителем</button>
-          <button className="rules__btn" onClick={() => handleClick('additional')}>Дополнительный материал</button>
-          <button className="rules__btn" onClick={() => handleClick('simulator')}>Тренажер</button>
-          <button className="rules__btn" onClick={() => handleClick('homework')}>Домашняя работа</button>
+          <button  className={`rules__btn ${activeType === 'lesson' ? 'active' : ''}`} onClick={() => handleClick('lesson')}>Живой урок с учителем</button>
+          <button className={`rules__btn ${activeType === 'additional' ? 'active' : ''}`}  onClick={() => handleClick('additional')}>Дополнительный материал</button>
+          <button className={`rules__btn ${activeType === 'simulator' ? 'active' : ''}`}  onClick={() => handleClick('simulator')}>Тренажер</button>
+          <button className={`rules__btn ${activeType === 'homework' ? 'active' : ''}`}  onClick={() => handleClick('homework')}>Домашняя работа</button>
         </div>
         <div className="rules__content">
           {currentItem && (

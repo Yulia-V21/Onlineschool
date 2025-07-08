@@ -13,8 +13,8 @@ const Header = () => {
   const menuItems = {
     "Для кого": "conditions",
     "Как проходят уроки": "comparison",
-    Преимущества: "benefits",
-    Цены: "price",
+    "Преимущества": "benefits",
+    "Цены": "price",
   };
   const { openModal } = useModal();
   const handleClick = (url) => {
@@ -44,7 +44,7 @@ const Header = () => {
             />
           </div>
           <div className="menu_icon" onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            <img src={head_menu} alt="Menu" />
+            <img src={isMenuOpen ? menu_close : head_menu} alt="Menu" />
           </div>
         </div>
         <nav>

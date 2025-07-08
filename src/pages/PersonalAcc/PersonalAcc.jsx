@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState} from "react";
+import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import { logo } from "../../shared/Images";
 import "./style.css";
@@ -6,6 +7,10 @@ import "./style.css";
 const PersonalAcc = () => {
   const [formData, setFormData] = useState({ login: "", password: "" });
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+  const HandleNavigate = () => {
+    navigate('/');
+  };
   const handleSubmit = (e) => {
     e.preventDefault();
     Cookies.set("login", formData.login, { expires: 1 });
@@ -19,6 +24,7 @@ const PersonalAcc = () => {
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+  
 
   return (
     <div className="personal__bg">
@@ -55,7 +61,7 @@ const PersonalAcc = () => {
               {showPassword ? "🙈" : "👁️"}
             </button>
           </div>
-          <button className="personal__btn" type="submit">
+          <button className="personal__btn" type="submit" onClick={HandleNavigate}>
             Войти в аккаунт
           </button>
         </form>
