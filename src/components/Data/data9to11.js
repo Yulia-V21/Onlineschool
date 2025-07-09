@@ -1,4 +1,13 @@
-  import { bonus6, bonus2, bonus7, bonus4,promo_9to11 } from "../../../shared/Images/index";
+  import { bonus6, bonus2, bonus7, bonus4,promo_9to11 } from "../../shared/Images/index";
+
+  export const programmaData9to11 = {
+    classes: ['9 класс', '10 класс', '11 класс'],
+    conditions: [
+        '4-5 занятий в день',
+        'С понедельника по пятницу',
+        'Каникулы по общему графику',
+    ],
+};
 
   export const promoData = {
     title: 'Старшая онлайн школа',

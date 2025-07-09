@@ -7,7 +7,7 @@ import {
   place,
   phone,
 } from "../../shared/Images";
-import "./Footer.css";
+import "./style.css";
 import { useNavigate } from "react-router-dom";
 
 const Footer = () => {

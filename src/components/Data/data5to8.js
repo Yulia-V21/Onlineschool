@@ -1,4 +1,13 @@
-import { bonus5, bonus2, bonus3, bonus4, promo_5to8} from "../../../shared/Images";
+import { bonus5, bonus2, bonus3, bonus4, promo_5to8} from "../../shared/Images";
+
+export const programmaData5to8 = {
+    classes: ['5 класс', '6 класс', '7 класс', '8 класс'],
+    conditions: [
+        '3-5 занятий в день',
+        'С понедельника по пятницу',
+        'Каникулы по общему графику',
+    ],
+};
 
 export const promoData = {
   title: 'Средняя онлайн школа',

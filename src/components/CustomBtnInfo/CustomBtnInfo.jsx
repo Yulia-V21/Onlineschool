@@ -1,7 +1,7 @@
-import "./style.css";
 import CustomButton from "../CustomButton/CustomButton";
 import { tg_40, watsapp } from "../../shared/Images";
 import { useModal } from "../../Context/ModalContext";
+import "./style.css";
 
 const CustomBtnInfo = () => {
   const { openModal } = useModal();

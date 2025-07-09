@@ -1,6 +1,13 @@
-import { bonus1, bonus2, bonus3, bonus4, promo_1to4 } from "../../../shared/Images/index";
+import { bonus1, bonus2, bonus3, bonus4, promo_1to4 } from "../../shared/Images/index";
 
-
+export const programmaData1to4 = {
+    classes: ['1 класс', '2 класс', '3 класс', '4 класс'],
+    conditions: [
+        '2-3 занятия в день',
+        'С понедельника по четверг',
+        'Каникулы по общему графику',
+    ],
+};
 export const promoData = {
   title: "Начальная онлайн школа",
   subtitle: "1-4 класс",

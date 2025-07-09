@@ -1,6 +1,7 @@
 export { default as logo } from "./logoHeader.png";
 export { default as head_menu } from "./header_menu.png";
 export { default as menu_close } from "./btn_menu_close.png";
+export { default as vector } from "./Vector.png";
 export { default as license } from "./ic_license.png";
 export { default as vk } from "./ic_vk.png";
 export { default as tg } from "./ic_tg.png";

@@ -1,18 +1,22 @@
-import Bonus from "../../components/Bonus/Bonus";
-import Programm9to11 from "./Components/Programm9to11";
-import Promo from "../../components/Promo/Promo";
-import VideoSection from "../../components/VideoSection/VideoSection";
-import RulesSchool from "../../components/RulesSchool/RulesSchool";
-import Certification from "../../components/Certification/Certification";
-import Reviews from "../home/Components/Reviews/Reviews";
-import AccordionBlock from "../../components/Accordion/Accordion";
+import {
+  Promo,
+  Bonus,
+  VideoSection,
+  RulesSchool,
+  Certification,
+  Reviews,
+  AccordionBlock,
+  FormHorizontally,
+  Programma,
+} from "../../components/index";
 import {
   accList9to11,
   certificationItems,
   bonusItemsData,
   promoData,
-} from "./Components/data9to11";
-import FormHorizontally from "../../components/FormHorizontally/FormHorizontally";
+  programmaData9to11,
+} from "../../components/Data/data9to11";
+
 const Grades9to11Page = () => {
   return (
     <div>
@@ -22,7 +26,10 @@ const Grades9to11Page = () => {
         text={promoData.text}
         img={promoData.img}
       />
-      <Programm9to11 />
+      <Programma
+        classes={programmaData9to11.classes}
+        conditions={programmaData9to11.conditions}
+      />
       <Bonus items={bonusItemsData} />
       <VideoSection />
       <RulesSchool />

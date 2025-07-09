@@ -1,11 +1,10 @@
-import "./Header.css";
-import { logo, head_menu, menu_close } from "../../shared/Images/index";
-import vector from "../../shared/Images/Vector.png";
+import { logo, head_menu, menu_close, vector } from "../../shared/Images/index";
 import CustomButton from "../CustomButton/CustomButton";
 import { useModal } from "../../Context/ModalContext";
 import { useScroll } from "../../Context/ScrollContext";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import "./style.css";
 
 const Header = () => {
   const navigate = useNavigate();

@@ -1,5 +1,4 @@
-import { certification_img } from '../../shared/Images/index';
-import { tg, sticker, mail } from '../../shared/Images/index';
+import { certification_img, tg, sticker, mail  } from '../../shared/Images/index';
 import './style.css';
 
 const Certification = ({ items }) => {

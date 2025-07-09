@@ -1,5 +1,5 @@
 import CustomBtnInfo from '../CustomBtnInfo/CustomBtnInfo';
-import './CustomPromo.css'
+import './style.css'
 const CustomPromo = ({ img }) => {
   return (
     <div className="promo_position">
