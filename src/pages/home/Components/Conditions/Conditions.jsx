@@ -1,4 +1,3 @@
-import CustomBtnInfo from "../../../../components/CustomBtnInfo/CustomBtnInfo.jsx";
 import CustomPromo from "../../../../components/CustomPromo/CustomPromo.jsx";
 import ConditionItem from "./ConditionsItem.jsx";
 import {

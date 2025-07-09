@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Button } from "@mui/material";
 import SliderItem from "./SliderItem";
 import { sliderData } from "./SliderData";
-import { bg_reviews } from "../../shared/Images";
+
 
 const ReviewSlider = () => {
   const reviews = sliderData;
@@ -48,7 +48,6 @@ const ReviewSlider = () => {
             sx={{
               boxSizing: "border-box",
               padding: "8px",
-              // width: `${slideWidthPercent}%`,
             }}
           >
             <SliderItem

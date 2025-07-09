@@ -8,7 +8,6 @@ import {
   benefits_6,
   promo_boy
 } from "../../../../shared/Images/index";
-import CustomBtnInfo from "../../../../components/CustomBtnInfo/CustomBtnInfo";
 import "./Benefits.css"
 import CustomPromo from "../../../../components/CustomPromo/CustomPromo";
 
