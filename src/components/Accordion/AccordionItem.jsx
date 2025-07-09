@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import "./style.css";
+import "./Style.css";
 
 const AccordionItem = ({ accItem, onClick, isOpen }) => {
   const itemRef = useRef(null);

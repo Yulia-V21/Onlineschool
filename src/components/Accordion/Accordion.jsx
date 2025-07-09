@@ -1,6 +1,6 @@
 import { useState } from "react";
 import AccordionItem from "./AccordionItem";
-import "./style.css";
+import "./Style.css";
 
 const AccordionBlock = ({ accList }) => {
   const [openId, setId] = useState(null);
